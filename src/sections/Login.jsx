@@ -14,16 +14,16 @@ const Login = () => {
         <form action="" method="post">
           <div className="flex flex-col p-8">
             <div className="flex flex-auto border border-slate-gray rounded-full h-10 m-2">
-              <img src={email} alt=""  className="pl-5 bg-gray-700 rounded-l-full"/>
+            <label htmlFor="email" className="label">Email</label>
               <input type="text" name="email" id="email" className="input" />
             </div>
 
             <div className="flex flex-auto border border-slate-gray rounded-full h-10 m-2">
-              <img src={password} alt="" className="pl-5 bg-gray-700 rounded-l-full"/>
+              <label htmlFor="password" className="label">Password</label>
               <input type="password" name="password" id="password" className="input" />
             </div>
             <div className="flex-1 justify-start mx-2 m-2">
-              <input type="checkbox" name="password" id="remember" className="input" />
+              <input type="checkbox" name="password" id="remember" className="flex-row" />
               <label htmlFor="" className="mx-2">Remember me</label>
             </div>
            <Button 
